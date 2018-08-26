@@ -119,10 +119,10 @@ h6 {
     }
 
     .nav {
-        z-index: 10 !important;
+        z-index: 10;
         background-color: #fff;
         width: 300px;
-        position: absolute;
+        position: absolute !important;
         /* This trasform moves the drawer off canvas. */
         -webkit-transform: translate(-300px, 0);
         transform: translate(-300px, 0);
@@ -132,6 +132,7 @@ h6 {
     .nav.open {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
+
     }
     .nav__item {
         display: list-item;
@@ -141,8 +142,7 @@ h6 {
     }
     .header__menu {
         display: inline-block;
-        position: absolute;
-        right: 0;
+        left: 0;
         padding: 1em;
     }
     .header__menu svg {

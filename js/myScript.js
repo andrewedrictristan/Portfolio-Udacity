@@ -71,7 +71,7 @@ function myFunction() {
 */
 var menu = document.querySelector('#menu');
 var main = document.querySelector('.container');
-var drawer = document.querySelector('.navbar');
+var drawer = document.querySelector('.nav');
 
 menu.addEventListener('click', function(e) {
     drawer.classList.toggle('open');
