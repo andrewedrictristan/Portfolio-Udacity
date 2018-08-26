@@ -1,0 +1,345 @@
+/*
+Template Name: Portfolio Udacity
+Description: HTML5 / CSS3 One Page
+Version: 1.0
+Author: Andrew Tristan
+*/
+
+/* --------------------------------------
+ * Global Typography
+ *------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 15px;
+    color: #2b2b3d;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1.8em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 15px;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+#txt{
+    font-family: "URW Chancery L", cursive;
+}
+
+.display-4 {
+    font-family: "URW Chancery L", cursive;
+}
+
+.lead{
+    font-family: "URW Chancery L", cursive;
+}
+
+/*-------------------
+ * WHITESPACE
+ *-------------------*/
+
+.distanceTop{
+    margin-top: 70px;
+}
+
+.distanceBottom{
+    margin-bottom: 30px;
+}
+
+
+
+
+/*-----------------------------
+ * NAVIGATION & HEADER STYLE
+ *-------------------------------*/
+
+.header__logo {
+    height: 100px;
+    margin-right: 1em;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+.header__title {
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0.75em 0.25em;
+    display: inline-block;
+    color: #212121;
+}
+
+.header__menu {
+    display: none;
+}
+
+.navManual{
+	position: relative;
+	margin: 0px auto;
+}
+
+@media screen and (max-width: 400px){
+    .header__logo{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .header__title{
+        text-align: center;
+        font-size: 2em;
+        display: block;
+    }
+
+    .nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+    .nav.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+    .header__menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        padding: 1em;
+    }
+    .header__menu svg {
+        width: 32px;
+        fill: #E0E0E0;
+    }
+
+}
+
+/*-------------------
+ * HOME BANNER
+ *-------------------*/
+#home {
+    width: 100%;
+    position: relative;
+    background-image: url("../img/cloud.jpg");
+    background-size: cover;
+    min-height: 300px;
+}
+
+.jumbotron {
+    background-color: rgba(221, 217, 225, 0.1) !important;
+    text-align: center;
+}
+
+/*-------------------
+ * TEXT IN SMALL SCREEN
+ *-------------------*/
+
+@media screen and (max-width: 400px){
+    h1 {
+        font-size: 16px !important;
+        line-height: 1.2em !important;
+        font-weight: 300;
+    }
+
+    h5{
+        font-size: 12px !important;
+        line-height: 1.2em !important;
+        font-weight: 300;
+    }
+
+    .card-body > a{
+        font-size: 12px;
+    }
+
+    table{
+        font-size: 12px;
+    }
+}
+
+/*-------------------
+ * About me
+ *-------------------*/
+
+#block{
+	width: 85%;
+	height: auto;
+}
+
+.shadow{
+	box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.buttonMap{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+@media screen and (max-width: 400px) {
+    .card{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .card-img-top {
+        width: 50% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .map {
+        display: none;
+    }
+}
+
+
+/*-------------------
+ * Education
+ *-------------------*/
+#htw, #tu_berlin{
+    display: none;
+}
+
+
+
+/*-------------------
+ * Skills Progressbar
+ *-------------------*/
+.progress{
+    height: 2rem !important;
+}
+
+.java {
+  width:70%;
+  animation:java 10s ease-out;
+}
+
+.html5 {
+  width:60%;
+  animation:html5 10s ease-out;
+}
+
+.wordpress {
+  width:60%;
+  animation:wordpress 10s ease-out;
+}
+
+.linux {
+  width:80%;
+  animation:linux 10s ease-out;
+}
+
+.javascript {
+  width:70%;
+  animation:javascript 10s ease-out;
+}
+
+.mysql {
+  width:90%;
+  animation:mysql 10s ease-out;
+}
+
+.docker {
+  width:40%;
+  animation:docker 10s ease-out;
+}
+
+@keyframes java {
+  0%  { width:0px;}
+  100%{ width:70%;}
+}
+
+@keyframes html5 {
+  0%  { width:0px;}
+  100%{ width:60%;}
+}
+
+@keyframes wordpress {
+  0%  { width:0px;}
+  100%{ width:60%;}
+}
+
+@keyframes linux {
+  0%  { width:0px;}
+  100%{ width:80%;}
+}
+
+@keyframes javascript {
+  0%  { width:0px;}
+  100%{ width:70%;}
+}
+
+@keyframes mysql {
+  0%  { width:0px;}
+  100%{ width:90%;}
+}
+
+@keyframes docker {
+  0%  { width:0px;}
+  100%{ width:40%;}
+}
+
+@media screen and (max-width: 400px) {
+    .progress{
+        height: 1.4rem !important;
+    }
+
+    #skill {
+        font-size: 13px;
+    }
+
+    .skill_row {
+        display: block !important;
+    }
+
+}
+
+/* --------------------------------------------
+ *   Footer
+ *---------------------------------------------- */
+
+#footer {
+   position:relative;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#F8F9FA;
+}
