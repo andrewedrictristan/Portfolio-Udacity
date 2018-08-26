@@ -1,10 +1,6 @@
 # Portfolio-Udacity
-==================================================================================================
 
-DESCRIPTION:
-
-#Udacity Portfolio is a project for Udacity Fullstack Nanodegree.
-
-==================================================================================================
+## Description
+Udacity Portfolio is a project for Udacity Fullstack Nanodegree.
 
 
