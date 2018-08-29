@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- page basic needs -->
@@ -16,370 +17,371 @@
     <link href="img/favicon.png" rel=icon>
 
     <!-- style CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-
-	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 </head>
 
-<body onload="start()" >
+<body onload="start()">
 
-    <!-- header -->
-	<header class="header">
+<!-- header -->
+<header class="header">
 
-        <!-- header inner -->
-        <div class="header__inner">
-            <img class="header__logo" src="img/logo.png" alt="iconic view of a cityscape">
-            <h1 class="header__title">
-                My Portfolio
-            </h1>
-            <a id="menu" class="header__menu">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-                </svg>
-            </a>
-        </div>
-        <!-- .header__inner -->
+    <!-- header inner -->
+    <div class="header__inner">
+        <img class="header__logo" src="img/logo.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+            My Portfolio
+        </h1>
+        <a id="menu" class="header__menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
+            </svg>
+        </a>
+    </div>
+    <!-- .header__inner -->
 
-        <!-- Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light nav" id="drawer">
-            <ul class="navbar-nav navManual nav__list">
-		      <li class="nav__item" onclick="scrollto('home');">
-		        <a class="nav-link" href="#">HOME</a>
-		      </li>
-		      <li class="nav__item" onclick="scrollto('about');">
-		        <a class="nav-link" href="#">ABOUT</a>
-		      </li>
-		      <li class="nav__item" onclick="scrollto('education');">
-		        <a class="nav-link" href="#">EDUCATION</a>
-		      </li>
-		      <li class="nav__item" onclick="scrollto('experiences');">
-		        <a class="nav-link" href="#">EXPERIENCES</a>
-		      </li>
-		      <li class="nav__item" onclick="scrollto('skill');">
-		        <a class="nav-link" href="#">SKILLS</a>
-		      </li>
-		    </ul>
-		</nav>
-        <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav" id="drawer">
+        <ul class="navbar-nav navManual nav__list">
+            <li class="nav__item" onclick="scrollto('home');">
+                <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav__item" onclick="scrollto('about');">
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav__item" onclick="scrollto('education');">
+                <a class="nav-link" href="#">EDUCATION</a>
+            </li>
+            <li class="nav__item" onclick="scrollto('experiences');">
+                <a class="nav-link" href="#">EXPERIENCES</a>
+            </li>
+            <li class="nav__item" onclick="scrollto('skill');">
+                <a class="nav-link" href="#">SKILLS</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navigation -->
 
-	</header>
-    <!-- .header -->
+</header>
+<!-- .header -->
 
-    <!-- Container -->
-	<div class="container">
+<!-- Container -->
+<div class="container">
 
-        <!-- page-row -->
-		<div class="row">
+    <!-- page-row -->
+    <div class="row">
 
-            <!-- page-center -->
-			<div class="col align-self-center">
-				<div class="distanceTop"></div>
-				<div class="distanceBottom"></div>
+        <!-- page-center -->
+        <div class="col align-self-center">
+            <div class="distanceTop"></div>
+            <div class="distanceBottom"></div>
 
-                <!-- home-banner -->
-				<div id="home">
-					<div class="jumbotron">
-					  <h1 >Hello, <span id="name"></span></h1>
-					  <p class="lead">Welcome to my My Résumé</p><div id="txt"></div>
+            <!-- home-banner -->
+            <div id="home" class="img-fluid">
+                <div class="jumbotron">
+                    <h1>Hello, <span id="name"></span></h1>
+                    <p class="lead">Welcome to my My Résumé</p>
+                    <div id="txt"></div>
 
-					</div>
-				</div>
-                <!-- .home-banner -->
+                </div>
+            </div>
+            <!-- .home-banner -->
 
-				<div class="distanceTop"></div>
+            <div class="distanceTop"></div>
 
-                <!-- about-me -->
-				<div id="about">
-					<h1 class="display-4 text-center">ABOUT ME</h1>
-					<div class="distanceBottom"></div>
+            <!-- about-me -->
+            <div id="about">
+                <h1 class="display-4 text-center">ABOUT ME</h1>
+                <div class="distanceBottom"></div>
 
-                    <!-- about-row -->
-					<div class="row">
+                <!-- about-row -->
+                <div class="row">
 
-                        <!-- about-first-item -->
-					  	<div class="col-12 col-md-5">
-					  		<div class="card">
-							  <img class="card-img-top" src="img/bild.jpg" alt="myPicture">
-							  <div class="card-body">
-							    <h5 class="card-title">Andrew Edric Tristan</h5>
-							    <p class="card-text font-weight-bold">Student of Technische Universität BERLIN</p>
-							  </div>
-							  <ul class="list-group list-group-flush">
-							    <li class="list-group-item"><span class="font-weight-bold">Birthday: </span> 23 October 1990</li>
-							    <li class="list-group-item"><span class="font-weight-bold">Birthplace:</span> Jambi, Indonesia</li>
-							    <li class="list-group-item"><span class="font-weight-bold">Address:</span> Lichtenberger Strasse 14, 10243 Berlin</li>
-							    <li class="list-group-item"><span class="font-weight-bold">Phone:</span> +49 176 626 80870</li>
-							    <li class="list-group-item"><span class="font-weight-bold">Skype ID:</span> Andrew Edric Tristan</li>
-							  </ul>
-							  <div class="card-body">
-							    <a href="mailto:andrewtristan17@gmail.com" class="card-link">andrewtristan17@gmail.com</a>
-							  </div>
-							</div>
-					  	</div>
-                        <!-- .about-first-item -->
+                    <!-- about-first-item -->
+                    <div class="col-12 col-md-5">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/bild.jpg" alt="myPicture">
+                            <div class="card-body">
+                                <h5 class="card-title">Andrew Edric Tristan</h5>
+                                <p class="card-text font-weight-bold">Student of Technische Universität BERLIN</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span class="font-weight-bold">Birthday: </span> 23 October 1990</li>
+                                <li class="list-group-item"><span class="font-weight-bold">Birthplace:</span> Jambi, Indonesia</li>
+                                <li class="list-group-item"><span class="font-weight-bold">Address:</span> Lichtenberger Strasse 14, 10243 Berlin</li>
+                                <li class="list-group-item"><span class="font-weight-bold">Phone:</span> +49 176 626 80870</li>
+                                <li class="list-group-item"><span class="font-weight-bold">Skype ID:</span> Andrew Edric Tristan</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="mailto:andrewtristan17@gmail.com" class="card-link">andrewtristan17@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .about-first-item -->
 
-                        <!-- map-image -->
-					  	<div class="col-12 col-md-6 map">
-							  <img id="block" src="img/map.png" class="shadow" alt="my map">
-					  	</div>
-                        <!-- .map-image -->
-					</div>
-                    <!-- about-row -->
+                    <!-- map-image -->
+                    <div class="col-12 col-md-6 map">
+                        <img id="block" src="img/map.png" class="shadow img-fluid" alt="my map">
+                    </div>
+                    <!-- .map-image -->
+                </div>
+                <!-- about-row -->
 
-				</div>
-                <!-- .about-me -->
-				
-				<div class="distanceTop"></div>
+            </div>
+            <!-- .about-me -->
 
-                <!-- education -->
-				<div id="education">
-					<h1 class="display-4 text-center">EDUCATION</h1>
-					<div class="distanceBottom"></div>
+            <div class="distanceTop"></div>
 
-                    <!-- education-first-item -->
-					<div class="row justify-content-center">
-					    <div class="col-8">
-					    	<div class="shadow">
-						 		<div class="card text-center">
-								  <div class="card-header">
-								    HTW BERLIN
-								  </div>
-								  <div class="card-body">
-                                   <img id="htw" src="img/htw.jpg" alt="Hochschule Technik und Wirtschaft">
-								    <h5 class="card-title">Internationaler Studiengang Medieninformatik</h5>
-								    <p class="card-text">Bachelor of Science</p>
-								    <a href="https://www.htw-berlin.de/" class="btn btn-primary" target="_blank">Link to HTW Berlin</a>
-								  </div>
-								  <div class="card-footer text-muted">
-								    2011 - 2016
-								  </div>
-								</div>
-							</div>
-					    </div>
-				  </div>
-                  <!-- .education-first-item -->
+            <!-- education -->
+            <div id="education">
+                <h1 class="display-4 text-center">EDUCATION</h1>
+                <div class="distanceBottom"></div>
 
-				  <div class="distanceTop"></div>
-
-                  <!-- education-second-item -->
-				  <div class="row justify-content-center">
-					    <div class="col-8">
-					    	<div class="shadow">
-						 		<div class="card text-center">
-								  <div class="card-header">
-								    Technische Univesität Berlin
-								  </div>
-								  <div class="card-body">
-                                   <img id="tu_berlin" src="img/tu_berlin.png" alt="Technische Universität Berlin">
-								    <h5 class="card-title">Computer Science</h5>
-								    <p class="card-text">Master of Science</p>
-								    <a href="https://www.tubit.tu-berlin.de/menue/it_service_center/" target="_blank" class="btn btn-primary">Link to TU Berlin</a>
-								  </div>
-								  <div class="card-footer text-muted">
-								    2016 - now
-								  </div>
-								</div>
-							</div>
-					    </div>
-					
-				  </div>
-                  <!-- .education-second-item -->
-
-				</div>
-                <!-- #education -->
+                <!-- education-first-item -->
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="shadow">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    HTW BERLIN
+                                </div>
+                                <div class="card-body">
+                                    <img id="htw" class="img-fluid" src="img/htw.jpg" alt="Hochschule Technik und Wirtschaft">
+                                    <h5 class="card-title">Internationaler Studiengang Medieninformatik</h5>
+                                    <p class="card-text">Bachelor of Science</p>
+                                    <a href="https://www.htw-berlin.de/" class="btn btn-primary" target="_blank">Link to HTW Berlin</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2011 - 2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .education-first-item -->
 
                 <div class="distanceTop"></div>
 
-                <!-- experiences -->
-				<div id="experiences">
-					<h1 class="display-4 text-center">EXPERIENCES</h1>
-					<div class="distanceBottom"></div>
-					<div class="row justify-content-center">
-					   		<table class="table table-bordered">
-							  <thead>
-							    <tr>
-							      <th scope="col">Company</th>
-							      <th scope="col">Job description</th>				      
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr>
-							      <th scope="row">WETAMO Berlin <br>(09.2013 - 06.2014)</th>
-							      <td>Internship as Web Developer <br> I builded and developed web from customer by using Standard Web Component, such as: HTML, CSS, Javascript, Wordpress, 
-							      	MYSQL, PHP.
-							      </td>
-							      
-							    </tr>
-							    <tr>
-							      <th scope="row">HAUPTSTADTKOFFER GMBH Berlin <br>(10.2014 - 05.2015) </th>
-							      
-							      <td>Working student as web developer <br> I used to work at frontend by using HTML5, CSS3, Javascript and 
-							      	modify the template from ebay template
-							      </td>
-							      
-							    </tr>
-							    <tr>
-							      <th scope="row">Haupt & Weber UG Berlin<br>(04.2016 - 06.2017) </th>							      
-							      <td>Working student in front- and backend field by using Javascript, AngularJS, NodeJS, PostgreSQL</td>
-							    </tr>
-							     <tr>
-							      <th scope="row">AWIN AG Berlin<br>(09.2017 - 04.2018) </th>					
-							      <td>Working student in area "IT OPERATION", I builded the new database server, replication, automation by using linux shell script, maintain the Docker container </td>
-							    </tr>
+                <!-- education-second-item -->
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="shadow">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Technische Univesität Berlin
+                                </div>
+                                <div class="card-body">
+                                    <img id="tu_berlin" class="img-fluid" src="img/tu_berlin.png" alt="Technische Universität Berlin">
+                                    <h5 class="card-title">Computer Science</h5>
+                                    <p class="card-text">Master of Science</p>
+                                    <a href="https://www.tubit.tu-berlin.de/menue/it_service_center/" target="_blank" class="btn btn-primary">Link to TU Berlin</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2016 - now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-							  </tbody>
-							</table>
+                </div>
+                <!-- .education-second-item -->
 
-					</div>
-					
-			  	</div>
-                <!-- .experiences -->
-					
-				
-				<div class="distanceTop"></div>
+            </div>
+            <!-- #education -->
 
-                <!-- skill -->
-				<div id="skill">
-					<h1 class="display-4 text-center">SKILLS</h1>
-					<div class="distanceBottom"></div>
+            <div class="distanceTop"></div>
 
-                    <!-- java-progress -->
-					<div class="row skill_row">
-						  <div class="col-1">
-						  	Java
-						  </div>
-                        <div class="col-1"></div>
-				 		 <div class="col-10">
-						  	<div class="progress skillbar" data-percent="70%">
-	  							  <div class="progress-bar progress-bar-striped bg-warning java" role="progressbar"  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" >Intermediate</div>
-						  	</div>
-						 </div>
-					</div>
-                    <!-- .java-progress -->
+            <!-- experiences -->
+            <div id="experiences">
+                <h1 class="display-4 text-center">EXPERIENCES</h1>
+                <div class="distanceBottom"></div>
+                <div class="row justify-content-center">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th scope="col">Company</th>
+                            <th scope="col">Job description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">WETAMO Berlin
+                                <br>(09.2013 - 06.2014)</th>
+                            <td>Internship as Web Developer
+                                <br> I builded and developed web from customer by using Standard Web Component, such as: HTML, CSS, Javascript, Wordpress, MYSQL, PHP.
+                            </td>
 
-					<div class="distanceBottom"></div>
+                        </tr>
+                        <tr>
+                            <th scope="row">HAUPTSTADTKOFFER GMBH Berlin
+                                <br>(10.2014 - 05.2015)</th>
 
-                    <!-- html5-progress -->
-					<div class="row skill_row">
-						  <div class="col-1">
-						  	HTML5
-						  </div>
-                        <div class="col-1"></div>
-				 		 <div class="col-10">
-						  	<div class="progress skillbar" data-percent="70%">
-	  							  <div class="progress-bar progress-bar-striped bg-warning html5" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" >Intermediate</div>
-						  	</div>
-						 </div>
-					</div>
-                    <!-- .html5-progress -->
+                            <td>Working student as web developer
+                                <br> I used to work at frontend by using HTML5, CSS3, Javascript and modify the template from ebay template
+                            </td>
 
-					<div class="distanceBottom"></div>
+                        </tr>
+                        <tr>
+                            <th scope="row">Haupt & Weber UG Berlin
+                                <br>(04.2016 - 06.2017)</th>
+                            <td>Working student in front- and backend field by using Javascript, AngularJS, NodeJS, PostgreSQL</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">AWIN AG Berlin
+                                <br>(09.2017 - 04.2018)</th>
+                            <td>Working student in area "IT OPERATION", I builded the new database server, replication, automation by using linux shell script, maintain the Docker container </td>
+                        </tr>
 
-                    <!-- wordpress-progress -->
-					<div class="row skill_row">
-						  <div class="col-1">
-						  	Wordpress
-						  </div>
-                        <div class="col-1"></div>
-				 		 <div class="col-10">
-						  	<div class="progress">
-	  							  <div class="progress-bar progress-bar-striped bg-warning wordpress" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
-						  	</div>
-						 </div>
-					</div>
-                    <!-- .wordpress-progress -->
+                        </tbody>
+                    </table>
 
-					<div class="distanceBottom"></div>
+                </div>
 
-                    <!-- linux-progress -->
-					<div class="row skill_row">
-						  <div class="col-1">
-						  	Linux
-						  </div>
-                        <div class="col-1"></div>
-				 		 <div class="col-10">
-						  	<div class="progress">
-	  							  <div class="progress-bar progress-bar-striped bg-warning linux" role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
-						  	</div>
-						 </div>
-					</div>
-                    <!-- .linux-progress -->
+            </div>
+            <!-- .experiences -->
 
-					<div class="distanceBottom"></div>
+            <div class="distanceTop"></div>
 
-                    <!-- js-progress -->
-					<div class="row skill_row">
-						  <div class="col-1">
-						  	Javascript
-						  </div>
-                        <div class="col-1"></div>
-				 		 <div class="col-10">
-						  	<div class="progress">
-	  							  <div class="progress-bar progress-bar-striped javascript " role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
-						  	</div>
-						 </div>
-					</div>
-                    <!-- .js-progress -->
+            <!-- skill -->
+            <div id="skill">
+                <h1 class="display-4 text-center">SKILLS</h1>
+                <div class="distanceBottom"></div>
 
-					<div class="distanceBottom"></div>
+                <!-- java-progress -->
+                <div class="row skill_row">
+                    <div class="col-1">
+                        Java
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="progress skillbar" data-percent="70%">
+                            <div class="progress-bar progress-bar-striped bg-warning java" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .java-progress -->
 
-                    <!-- MYSQL-progress -->
-					<div class="row skill_row">
-						  <div class="col-1">
-						  	MYSQL
-						  </div>
-                        <div class="col-1"></div>
-				 		 <div class="col-10">
-						  	<div class="progress">
-	  							  <div class="progress-bar progress-bar-striped bg-success mysql" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Very good</div>
-						  	</div>
-						 </div>
-					</div>
-                    <!-- .MYSQL-progress -->
+                <div class="distanceBottom"></div>
 
-					<div class="distanceBottom"></div>
+                <!-- html5-progress -->
+                <div class="row skill_row">
+                    <div class="col-1">
+                        HTML5
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="progress skillbar" data-percent="70%">
+                            <div class="progress-bar progress-bar-striped bg-warning html5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .html5-progress -->
 
-                    <!-- docker-progress -->
-					<div class="row skill_row">
-						  <div class="col-1">
-						  	Docker
-						  </div>
-                        <div class="col-1"></div>
-				 		 <div class="col-10">
-						  	<div class="progress">
-	  							  <div class="progress-bar progress-bar-striped bg-danger docker" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Beginner</div>
-						  	</div>
-						 </div>
-					</div>
-                    <!-- .docker-progress -->
+                <div class="distanceBottom"></div>
 
-				</div>
-                <!-- .skill -->
+                <!-- wordpress-progress -->
+                <div class="row skill_row">
+                    <div class="col-1">
+                        Wordpress
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning wordpress" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .wordpress-progress -->
 
+                <div class="distanceBottom"></div>
 
-				<div class="distanceTop"></div>
-			</div>
-            <!-- .page-center -->
-				
- 		</div>
-        <!-- .page-row -->
+                <!-- linux-progress -->
+                <div class="row skill_row">
+                    <div class="col-1">
+                        Linux
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning linux" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .linux-progress -->
 
-	</div>
-    <!-- .container -->
+                <div class="distanceBottom"></div>
 
-    <!-- Footer -->
-	<footer id="footer">
-		<div class="footer-copyright text-center py-3">© 2018 Copyright Andrew Tristan</div>
-	</footer>
-    <!-- #footer -->
+                <!-- js-progress -->
+                <div class="row skill_row">
+                    <div class="col-1">
+                        Javascript
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped javascript " role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .js-progress -->
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/myScript.js"></script>
+                <div class="distanceBottom"></div>
+
+                <!-- MYSQL-progress -->
+                <div class="row skill_row">
+                    <div class="col-1">
+                        MYSQL
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success mysql" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Very good</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .MYSQL-progress -->
+
+                <div class="distanceBottom"></div>
+
+                <!-- docker-progress -->
+                <div class="row skill_row">
+                    <div class="col-1">
+                        Docker
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-danger docker" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .docker-progress -->
+
+            </div>
+            <!-- .skill -->
+
+            <div class="distanceTop"></div>
+        </div>
+        <!-- .page-center -->
+
+    </div>
+    <!-- .page-row -->
+
+</div>
+<!-- .container -->
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-copyright text-center py-3">© 2018 Copyright Andrew Tristan</div>
+</footer>
+<!-- #footer -->
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/myScript.js"></script>
 </body>
+
 </html>
